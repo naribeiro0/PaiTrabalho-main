@@ -35,7 +35,7 @@ while True:
     try:
         ret, frame = cap.read()
         if not ret:
-            print("Failed to grab frame")
+            print("Failed to grab frame xxx")
             continue
 
         H, W, _ = frame.shape
