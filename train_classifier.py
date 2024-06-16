@@ -7,7 +7,7 @@ import numpy as np
 # Carregar os dados
 data_dict = pickle.load(open('./data.pickle', 'rb'))
 
-# Verificar a consist�ncia dos dados
+# Verificar a consistência dos dados
 data = data_dict['data']
 labels = data_dict['labels']
 
@@ -38,11 +38,11 @@ model = RandomForestClassifier()
 # Treinar o modelo
 model.fit(x_train, y_train)
 
-# Fazer previs�es
+# Fazer previsões
 y_train_predict = model.predict(x_train)
 y_test_predict = model.predict(x_test)
 
-# Calcular acur�cia
+# Calcular acurácia
 train_score = accuracy_score(y_train_predict, y_train)
 test_score = accuracy_score(y_test_predict, y_test)
 
